@@ -1,0 +1,18 @@
+{
+  "appName": {
+    "message": "Extends Drop Grabley Net"
+  },
+  "appDescription": {
+    "message": "Grabley расширение для улучшения функционала drop.grabley.net"
+  },
+  "popupShowCheckboxAddButton": {
+    "message": "Показать кнопку Grabley Add"
+  },
+  "popupShowCheckboxAsin": {
+    "message": "Показать ASIN"
+  },
+  "dropExtensionsLoadedVersion": {
+    "message": "DROP EXTENSIONS ЗАГРУЖЕНО! ВЕРСИЯ:"
+  }
+
+}
