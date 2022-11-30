@@ -17,6 +17,7 @@ module.exports = {
 	},
 	devServer: {
 		port: env.PORT,
+		host: env.HOST,
 		hot: false,
 		liveReload: false,
 		static: [
