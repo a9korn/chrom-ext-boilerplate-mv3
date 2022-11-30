@@ -42,4 +42,9 @@ module.exports = {
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js'],
 	},
+	optimization: {
+		splitChunks: {
+			chunks: 'all',
+		},
+	},
 };
