@@ -18,9 +18,13 @@ module.exports = {
 	devServer: {
 		port: env.PORT,
 		host: env.HOST,
+		client: false,
 		hot: false,
 		liveReload: false,
 		allowedHosts: 'all',
+		headers: {
+			'Access-Control-Allow-Origin': '*',
+		},
 		static: [
 			path.resolve(__dirname, 'src/Content'),
 			path.resolve(__dirname, 'src/Background'),
