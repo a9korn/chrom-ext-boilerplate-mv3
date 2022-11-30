@@ -20,6 +20,7 @@ module.exports = {
 		host: env.HOST,
 		hot: false,
 		liveReload: false,
+		allowedHosts: 'all',
 		static: [
 			path.resolve(__dirname, 'src/Content'),
 			path.resolve(__dirname, 'src/Background'),
