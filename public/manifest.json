@@ -35,7 +35,8 @@
     "storage"
   ],
   "host_permissions": [
-    "*://*.google.com/*"
+    "*://*.google.com/*",
+    "*://localhost/*"
   ],
   "web_accessible_resources": [],
   "content_security_policy": {
