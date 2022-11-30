@@ -18,12 +18,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.amazon.com/*",
-        "https://www.amazon.co.uk/*",
-        "https://www.amazon.ca/*",
-        "https://www.amazon.com.mx/*",
-        "*://drop.grabley.net/*",
-        "*://drop.grabley.loc/*"
+        "*://*.google.com/*"
       ],
       "js": ["content.bundle.js"]
     }
@@ -33,64 +28,16 @@
     "default_popup": "popup.html"
   },
   "externally_connectable": {
-    "matches": [
-      "*://drop.grabley.loc/*",
-      "*://drop.grabley.net/*"
-    ]
+    "matches": []
   },
-  "homepage_url": "https://grabley.net",
   "permissions": [
     "activeTab",
     "storage"
   ],
   "host_permissions": [
-    "*://*.grabley.net/*",
-    "*://*.grabley.loc/*",
-    "*://*.ebay.com/*",
-    "*://*.ebay.ca/*",
-    "*://*.ebay.co.uk/*",
-    "*://*.ebay.de/*",
-    "*://*.ebay.es/*",
-    "*://*.ebay.it/*",
-    "*://*.ebay.fr/*",
-    "*://*.amazon.com/*",
-    "*://*.amazon.ca/*",
-    "*://*.amazon.co.uk/*",
-    "*://*.amazon.de/*",
-    "*://*.amazon.it/*",
-    "*://*.amazon.es/*",
-    "*://*.amazon.fr/*",
-    "*://*.walmart.com/*",
-    "https://www.walmart.com/*",
-    "*://*.banggood.com/*",
-    "*://*.bonanza.com/*",
-    "*://*.overstock.com/*",
-    "*://*.aliexpress.com/*",
-    "*://*.aliexpress.ru/*",
-    "*://*.gearbest.com/*",
-    "*://*.webstaurantstore.com/*",
-    "*://*.chewy.com/*",
-    "*://*.etsy.com/*",
-    "*://*.sephora.com/*",
-    "*://*.homedepot.com/*",
-    "*://*.zoro.com/*",
-    "*://*.lowes.com/*"
+    "*://*.google.com/*"
   ],
-  "web_accessible_resources": [
-    {
-      "resources":["images/*.png"],
-      "matches": [
-        "*://*.amazon.com/*"
-      ]
-    },
-    {
-      "resources": ["manifest.json"],
-      "matches": [
-        "*://drop.grabley.loc/*",
-        "*://drop.grabley.net/*"
-      ]
-    }
-  ],
+  "web_accessible_resources": [],
   "content_security_policy": {
     "extension_pages": "default-src 'none'; script-src 'self'; connect-src 'self' *; img-src 'self'; style-src 'self' 'unsafe-inline';base-uri 'self';form-action 'self'"
   }

@@ -1,4 +1,1 @@
-import {test} from './test';
-
-console.log('BG', test);
-
+console.log('BACKGROUND');

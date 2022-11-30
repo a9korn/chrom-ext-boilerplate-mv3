@@ -5,7 +5,7 @@ import './Popup.css';
 const PopupApp = () => (
 	<div className='container'>
 		<div style={{textAlign: 'center'}}>
-					test
+					PopUp
 		</div>
 
 	</div>

@@ -4,6 +4,7 @@
     "target": "ES6",
     "lib": ["ES5", "ES6", "DOM"],
     "allowJs": true,
+    "strict": false,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
@@ -15,9 +16,11 @@
     "skipLibCheck": true,
     "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "types": ["react/next", "react-dom/next"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
