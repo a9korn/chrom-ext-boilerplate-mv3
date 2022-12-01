@@ -16,7 +16,7 @@
     "skipLibCheck": true,
     "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
-    "types": ["react/next", "react-dom/next"]
+    "types": ["react/next", "react-dom/next", "chrome"]
   },
   "include": ["src/**/*"],
   "exclude": [
