@@ -1,7 +1,10 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const env = require('./env');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -37,14 +40,21 @@ module.exports = {
 				},
 			],
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'popup.html',
+			template: path.resolve(__dirname, '../src/Popup/popup.html'),
+			chunks: ['popup'],
+		}),
 		new MiniCssExtractPlugin(),
 	],
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js'],
 	},
 	optimization: {
-		splitChunks: {
-			chunks: 'all',
-		},
+		minimizer: [
+			new TerserPlugin(),
+			new CssMinimizerPlugin(),
+		],
+		minimize: true,
 	},
 };
